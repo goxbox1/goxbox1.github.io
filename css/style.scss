@@ -129,7 +129,7 @@ span::after {
     position: fixed;
     top: 75px;
     z-index: 1000;
-    width: 173px;
+    width: 142px;
     right: 0;
     list-style-type: none;
     margin: 10px;
@@ -139,7 +139,7 @@ span::after {
     font-family: Renogare;
     border-radius: 8px;
     //box-shadow: 0 4px 10px rgba(0, 0, 0, 0.109);
-    font-size: 25px;
+    font-size: 20px;
 
     li {
         .premium {
@@ -172,7 +172,7 @@ span::after {
 
 .hero {
     text-align: center;
-    padding: 140px 0 70px 0;
+    padding: 140px 0 60px 0;
     margin: 0 40px 0 40px;
     color: white;
 
@@ -268,7 +268,7 @@ span::after {
     text-align: center;
     background-color: #191B20;
     font-size: 20px;
-    padding: 110px 0 50px 0;
+    padding: 100px 0 27px 0;
     color: white;
 
     .title {
