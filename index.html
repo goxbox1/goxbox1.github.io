@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- METATAGS -->
+
+    <title>Chamber</title>
+    <meta name="title" content="Chamber">
+    <meta name="description" content="Chamber is a Discord Music Bot with lots of features!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chamber.lol/">
+    <meta property="og:title" content="Chamber">
+    <meta property="og:description" content="Chamber is a Discord Music Bot with lots of features!">
+    <meta property="og:image" content="https://i.imgur.com/QIu35pc.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://chamber.lol/">
+    <meta property="twitter:title" content="Chamber">
+    <meta property="twitter:description" content="Chamber is a Discord Music Bot with lots of features!">
+    <meta property="twitter:image" content="https://i.imgur.com/QIu35pc.png">
+    <meta name="theme-color" content="#ED4245">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- NAVBAR -->
+
+    <ul class="navbar">
+
+        <li><a href="https://chamber.lol" class="navtitle">Chamber.</a></li>
+        <li class="hide" style="float:right"><a href="https://chamber.lol/patreon" target="_blank" class="premium">Premium <ion-icon name="diamond-outline" class="diamond"></ion-icon></a></li>
+        <li class="hide" style="float:right"><a href="https://chamber.lol/support" target="_blank">Support</a></li>
+        <li class="hide" style="float:right"><a href="https://chamber.lol/commands">Commands</a></li>
+        <li id="menu" style="float:right" onclick="toggle()"><a><ion-icon class="menu" name="menu" style="font-size: 19px;"></ion-icon></a></li>
+
+    </ul>
+
+    <ul id="list" class="hidden">
+
+        <li><a href="https://chamber.lol/commands">Commands</a></li>
+        <li><a href="https://chamber.lol/support" target="_blank">Support</a></li>
+        <li><a href="https://chamber.lol/patreon" target="_blank" class="premium">Premium <ion-icon name="diamond-outline" class="diamond"></ion-icon></a></li>
+
+    </ul>
+
+    <!-- HERO -->
+
+    <div class="hero">
+
+        <span id="slogan" class="title"></span>
+        <span class="subtitle">Play high quality music on your Discord Server</span>
+        <br>
+        <a class="btn active" href="https://chamber.lol/invite" target="_blank">Invite</a>
+        <a onclick="update()" id="update" class="btn dark">More Chambers <ion-icon name="chevron-down-outline" class="arrow"></ion-icon></a>
+        <div id="links" class="invites off">
+            <a class="btn blue" href="https://chamber.lol/invite2" target="_blank">Chamber 2</a>
+            <a class="btn green" href="https://chamber.lol/invite3" target="_blank">Chamber 3 <ion-icon name="diamond-outline" class="diamond"></ion-icon></a>
+            <a class="btn yellow" href="https://chamber.lol/beta" target="_blank">Chamber Beta <ion-icon name="diamond-outline" class="diamond"></ion-icon></a>
+        </div>
+
+    </div>
+
+    <!-- FEATURES -->
+
+    <div class="features">
+
+        <div class="feature left">
+            <img src="./images/card.png"><br>
+            <span class="name">Unlimited Queue Size</span>
+            <span class="description">Add as many tracks as you want to the queue</span>
+        </div>
+        
+        <div class="feature right">
+            <img src="./images/card.png"><br>
+            <span class="name">Profiles</span>
+            <span class="description">Check your Chamber Stats & History</span>
+        </div>
+
+        <div class="feature left">
+            <img src="./images/card.png"><br>
+            <span class="name">24/7 Lofi</span>
+            <span class="description">Listen to Lofi forever</span>
+        </div>
+
+        <div class="feature right">
+            <img src="./images/card.png"><br>
+            <span class="name">Free Volume Control</span>
+            <span class="description">Adjust the server volume as much as you want</span>
+        </div>
+
+        <div class="feature left">
+            <img src="./images/card.png"><br>
+            <span class="name">DJ System</span>
+            <span class="description">Only users with the DJ role can control the music</span>
+        </div>
+
+        <div class="feature right">
+            <img src="./images/card.png"><br>
+            <span class="name">Spotify Support</span>
+            <span class="description">Chamber supports Spotify tracks, playlists & albums</span>
+        </div>
+
+        <div class="feature left">
+            <img src="./images/card.png"><br>
+            <span class="name">Easy-to-use UI</span>
+            <span class="description">Control the music with buttons and slash commands</span>
+        </div>
+
+    </div>
+
+    <!-- END -->
+
+    <div class="end">
+
+        <span class="title">Ready to give it try?</span>
+        <br>
+        <a class="btn active" href="https://chamber.lol/invite" target="_blank">Invite Chamber <ion-icon name="chevron-forward-outline" class="arrow"></ion-icon></a>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+
+        <a class="title" href="https://chamber.lol">Chamber.</a><br>
+        <span class="subtitle">Developed by <a href="https://itsgox.com" target="_blank">Gox</a></span>
+    
+    </div>
+
+    <!-- SCRIPTS -->
+
+    <script>
+
+        //SLOGAN
+
+        function slogan() {
+            
+            let slogans = [
+                'Let the Music Speak!',
+                'Music is the answer.',
+                'Bring music to life.',
+                'When words fail, music speaks.',
+                'Let the music take you away.',
+                'Don\'t stop the music.'
+            ]
+
+            let random = slogans[Math.floor(Math.random() * slogans.length)]
+            let sloganText = document.getElementById('slogan').textContent = random
+        }
+        slogan()
+
+        //INVITES
+
+        function update() {
+            let links = document.getElementById("links")
+            if (links.classList.contains('off')) {
+                links.classList.remove('off')
+                links.classList.add('on')
+                document.getElementById("update").innerHTML = `More Chambers <ion-icon name="chevron-up-outline" class="arrow"></ion-icon>`
+            }
+            else if (links.classList.contains('on')) {
+                links.classList.remove('on')
+                links.classList.add('off')
+                document.getElementById("update").innerHTML = `More Chambers <ion-icon name="chevron-down-outline" class="arrow"></ion-icon>`
+            }
+        }
+
+        //MOBILE MENU
+
+        function toggle() {
+            let menu = document.getElementById("menu")
+            let list = document.getElementById("list")
+            if (list.classList.contains('hidden-on')) {
+                menu.innerHTML = `<a onclick="toggle()"><ion-icon class="menu" name="menu" style="font-size: 19px;"></ion-icon></a>`
+                list.classList.remove('hidden-on')
+            }
+            else {
+                menu.innerHTML = `<a onclick="toggle()"><ion-icon class="menu" name="close" style="font-size: 19px;"></ion-icon></a>`
+                list.classList.add('hidden-on')
+            }
+        }
+
+    </script>
+
+</body>
+</html>

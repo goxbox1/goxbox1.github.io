@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- METATAGS -->
+
+    <title>Chamber - Commands</title>
+    <meta name="title" content="Chamber - Commands">
+    <meta name="description" content="Chamber is a Discord Music Bot with lots of features!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chamber.lol/commands">
+    <meta property="og:title" content="Chamber - Commands">
+    <meta property="og:description" content="Chamber is a Discord Music Bot with lots of features!">
+    <meta property="og:image" content="https://i.imgur.com/QIu35pc.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://chamber.lol/commands">
+    <meta property="twitter:title" content="Chamber - Commands">
+    <meta property="twitter:description" content="Chamber is a Discord Music Bot with lots of features!">
+    <meta property="twitter:image" content="https://i.imgur.com/QIu35pc.png">
+    <meta name="theme-color" content="#ED4245">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- NAVBAR -->
+
+    <ul class="navbar">
+
+        <li><a href="https://chamber.lol" class="navtitle">Chamber.</a></li>
+        <li class="hide" style="float:right"><a href="https://chamber.lol/patreon" target="_blank" class="premium">Premium <ion-icon name="diamond-outline" class="diamond"></ion-icon></a></li>
+        <li class="hide" style="float:right"><a href="https://chamber.lol/support" target="_blank">Support</a></li>
+        <li class="hide" style="float:right"><a href="https://chamber.lol/commands">Commands</a></li>
+        <li id="menu" style="float:right" onclick="toggleMenu()"><a><ion-icon class="menu" name="menu" style="font-size: 19px;"></ion-icon></a></li>
+
+    </ul>
+
+    <ul id="list" class="hidden">
+
+        <li><a href="https://chamber.lol/commands">Commands</a></li>
+        <li><a href="https://chamber.lol/support" target="_blank">Support</a></li>
+        <li><a href="https://chamber.lol/patreon" target="_blank" class="premium">Premium <ion-icon name="diamond-outline" class="diamond"></ion-icon></a></li>
+
+    </ul>
+
+    <!-- FEATURES -->
+
+    <div class="commands">
+
+        <span class="title"><b>Commands</b></span><br><br>
+        
+        <div class="command" id="help" onclick="toggle('help')">
+            <span class="name">/help</span>
+            <span class="description">Learn more about Chamber</span>
+            <span class="usage" id="help_"><br><b>Requirements</b><br>None</span>
+        </div>
+        
+        <div class="command" id="invite" onclick="toggle('invite')">
+            <span class="name">/invite</span>
+            <span class="description">Learn more about Chamber</span>
+            <span class="usage" id="invite_"><br><b>Requirements</b><br>None</span>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+
+        <a class="title" href="https://chamber.lol">Chamber.</a><br>
+        <span class="subtitle">Developed by <a href="https://itsgox.com" target="_blank">Gox</a></span>
+    
+    </div>
+
+    <!-- SCRIPTS -->
+
+    <script>
+
+        //TOGGLE COMMAND
+
+        function toggle(cmd) {
+            let command = document.getElementById(cmd)
+            let command_ = document.getElementById(`${cmd}_`)
+            if (command.classList.contains('active')) {
+                command.classList.remove('active')
+                command_.classList.remove('usage-on')
+            }
+            else {
+                command.classList.add('active')
+                command_.classList.add('usage-on')
+            }
+        }
+
+        //MOBILE MENU
+
+        function toggleMenu() {
+            let menu = document.getElementById("menu")
+            let list = document.getElementById("list")
+            if (list.classList.contains('hidden-on')) {
+                menu.innerHTML = `<a onclick="toggle()"><ion-icon class="menu" name="menu" style="font-size: 19px;"></ion-icon></a>`
+                list.classList.remove('hidden-on')
+            }
+            else {
+                menu.innerHTML = `<a onclick="toggle()"><ion-icon class="menu" name="close" style="font-size: 19px;"></ion-icon></a>`
+                list.classList.add('hidden-on')
+            }
+        }
+
+    </script>
+
+</body>
+</html>
