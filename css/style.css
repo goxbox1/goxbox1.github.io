@@ -67,8 +67,6 @@ span::after {
   background-color: #14161A;
   font-family: Renogare;
   border-radius: 8px;
-  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.109);
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.109);
 }
 
 .navbar li {
@@ -117,7 +115,7 @@ span::after {
   position: fixed;
   top: 75px;
   z-index: 1000;
-  width: 116px;
+  width: 173px;
   right: 0;
   list-style-type: none;
   margin: 10px;
@@ -126,8 +124,7 @@ span::after {
   background-color: #14161A;
   font-family: Renogare;
   border-radius: 8px;
-  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.109);
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.109);
+  font-size: 25px;
 }
 
 @-webkit-keyframes fadeIn {
@@ -193,8 +190,6 @@ span::after {
 .hero .btn {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.109);
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.109);
   text-decoration: none;
   color: white;
   font-family: MADE_TOMMY_Medium;
@@ -235,7 +230,7 @@ span::after {
 }
 
 .features img {
-  width: 200px;
+  width: 250px;
   height: auto;
   padding-bottom: 35px;
 }
@@ -281,8 +276,6 @@ span::after {
 }
 
 .commands .command {
-  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.061);
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.061);
   background-color: #1c1f25;
   text-align: left;
   padding: 30px;
@@ -344,8 +337,6 @@ span::after {
 .invites .btn {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.109);
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.109);
   text-decoration: none;
   color: white;
   font-family: MADE_TOMMY_Medium;
@@ -397,8 +388,6 @@ span::after {
 .end .btn {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.109);
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.109);
   text-decoration: none;
   color: white;
   font-family: MADE_TOMMY_Medium;
@@ -490,8 +479,6 @@ span::after {
     background-color: #14161A;
     font-family: Renogare;
     border-radius: 8px;
-    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.109);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.109);
   }
   .navbar li {
     float: left;
@@ -541,8 +528,6 @@ span::after {
   .hero .btn {
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.109);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.109);
     text-decoration: none;
     color: white;
     font-family: MADE_TOMMY_Medium;
@@ -577,16 +562,16 @@ span::after {
     color: white;
   }
   .features img {
-    width: 300px;
+    width: 400px;
     height: auto;
     padding-bottom: 35px;
   }
   .features .feature {
     text-align: center;
-    padding: 0px;
+    padding: 10px 0 10px 0;
     margin: 0 0px 50px 0px;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 20%;
+    margin-right: 20%;
     border-radius: 5px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -616,8 +601,6 @@ span::after {
     padding-bottom: 50px;
   }
   .commands .command {
-    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.061);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.061);
     background-color: #1c1f25;
     text-align: left;
     padding: 30px;
@@ -669,8 +652,6 @@ span::after {
   .invites .btn {
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.109);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.109);
     text-decoration: none;
     color: white;
     font-family: MADE_TOMMY_Medium;
@@ -713,8 +694,6 @@ span::after {
   .end .btn {
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.109);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.109);
     text-decoration: none;
     color: white;
     font-family: MADE_TOMMY_Medium;
